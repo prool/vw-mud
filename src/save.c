@@ -2127,7 +2127,7 @@ void fread_obj( CHAR_DATA *ch, FILE *fp )
 	}
     }
 }
-BAN_DATA *     ban_list;
+extern BAN_DATA *     ban_list;
 
 void save_siteban_info( void )
 {
