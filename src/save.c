@@ -2327,7 +2327,7 @@ void do_updateleague( CHAR_DATA *ch, char *argument)
 		  league_infotable[n].Mk   = fread_number(fp, -999);
 		  league_infotable[n].Md   = fread_number(fp, -999);
 		  fread_to_eol(fp);
-		  (int)tester=getc(fp);
+		  tester=getc(fp);
 		  snprintf(buf,  MAX_STRING_LENGTH, "name %s \n\r", league_infotable[n].name);
 		  send_to_char(buf,ch); 
 	   }
